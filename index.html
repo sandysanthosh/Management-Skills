@@ -1,101 +1,122 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
-    <meta charset="utf-8">
-    <title>Directions service</title>
-    <style>
-      /* Always set the map height explicitly to define the size of the div
-       * element that contains the map. */
-      #map {
-        height: 100%;
-      }
-      /* Optional: Makes the sample page fill the window. */
-      html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
-      #floating-panel {
-        position: absolute;
-        top: 10px;
-        left: 25%;
-        z-index: 5;
-        background-color: #fff;
-        padding: 5px;
-        border: 1px solid #999;
-        text-align: center;
-        font-family: 'Roboto','sans-serif';
-        line-height: 30px;
-        padding-left: 10px;
-      }
-    </style>
-  </head>
-  <body>
-    <div id="floating-panel">
-    <b>Start: </b>
-    <select id="start">
-      <option value="chicago, il">Chicago</option>
-      <option value="st louis, mo">St Louis</option>
-      <option value="joplin, mo">Joplin, MO</option>
-      <option value="oklahoma city, ok">Oklahoma City</option>
-      <option value="amarillo, tx">Amarillo</option>
-      <option value="gallup, nm">Gallup, NM</option>
-      <option value="flagstaff, az">Flagstaff, AZ</option>
-      <option value="winona, az">Winona</option>
-      <option value="kingman, az">Kingman</option>
-      <option value="barstow, ca">Barstow</option>
-      <option value="san bernardino, ca">San Bernardino</option>
-      <option value="los angeles, ca">Los Angeles</option>
-    </select>
-    <b>End: </b>
-    <select id="end">
-      <option value="chicago, il">Chicago</option>
-      <option value="st louis, mo">St Louis</option>
-      <option value="joplin, mo">Joplin, MO</option>
-      <option value="oklahoma city, ok">Oklahoma City</option>
-      <option value="amarillo, tx">Amarillo</option>
-      <option value="gallup, nm">Gallup, NM</option>
-      <option value="flagstaff, az">Flagstaff, AZ</option>
-      <option value="winona, az">Winona</option>
-      <option value="kingman, az">Kingman</option>
-      <option value="barstow, ca">Barstow</option>
-      <option value="san bernardino, ca">San Bernardino</option>
-      <option value="los angeles, ca">Los Angeles</option>
-    </select>
-    </div>
-    <div id="map"></div>
-    <script>
-      function initMap() {
-        var directionsService = new google.maps.DirectionsService;
-        var directionsDisplay = new google.maps.DirectionsRenderer;
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 7,
-          center: {lat: 41.85, lng: -87.65}
-        });
-        directionsDisplay.setMap(map);
-        var onChangeHandler = function() {
-          calculateAndDisplayRoute(directionsService, directionsDisplay);
-        };
-        document.getElementById('start').addEventListener('change', onChangeHandler);
-        document.getElementById('end').addEventListener('change', onChangeHandler);
-      }
-      function calculateAndDisplayRoute(directionsService, directionsDisplay) {
-        directionsService.route({
-          origin: document.getElementById('start').value,
-          destination: document.getElementById('end').value,
-          travelMode: 'DRIVING'
-        }, function(response, status) {
-          if (status === 'OK') {
-            directionsDisplay.setDirections(response);
-          } else {
-            window.alert('Directions request failed due to ' + status);
-          }
-        });
-      }
-    </script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnahpwY4LRTYlzEHnER3B_Y8NR1HzmrVE&callback=initMap">
-    </script>
-  </body>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+img.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 200px;
+}
+</style>
+</head>
+<body>
+<h2>Management Skills</h2>
+<p>Some example text..</p>
+<p><b>Management Skills</b></p>
+<p>
+</br>
+dnt establish goals</br>
+dnt give effective feedback</br>
+dnt communicate expectations</br>
+dnt establish goals</br>
+teach effectively</br>
+infrom about company policy and procedures</br>
+implement new program and methods</br>
+make your own decision</br>
+stay away from big picture</br>
+</br>
+role of a manager goals:
+</br>
+setting goals</br>
+decision making</br>
+managing change</br>
+time managments</br>
+communication skills - effective communication skills and body language
+motivation - self-motived
+delegation  - 
+training - training ur self and team
+
+    <p><b>Effective behaviour</b></p>
+
+patience
+tolerance
+sense of humour
+empathy
+sensivity
+empathy
+
+<p><b>build you spirit:</b></p>
+
+be genuine</br>
+ask good questions</br>
+talk even about the hard things</br>
+follow through commitments</br>
+let others speak first</br>
+non perforer motivate them</br>
+face up to non-performing players</br>
+have fun, but never at other expensesv
+be confident and dependable</br>
+be truly open-minded</br>
+avoid taking sides</br>
+recognise your own bites</br>
+avoid absolute wordings in your decisions</br>
+making the decision - stick to the decision</br>
+
+</br>
+ask your-self?
+</br>
+sufficient information?</br>
+worst possible result?</br>
+right time to the decision?</br>
+best person to tke this decision?v
+</br>
+<p><b>Build trust and confidenace: -> inter-personal skills</b></p>
+</br>
+build rapport</br>
+take a diplomatic approach</br>
+establish credibility</br>
+engage in conflict solutions</br>
+</br>
+Take for Being a Active Listener:
+</br>
+respond appropratiely</br>
+pay attention</br>
+show that you are listening</br>
+prove feedback</br>
+avoid judgement</br>
+
+<p><b>for effective communication skills:</b></p>
+
+present one idea at a time
+keep it simple and brief
+apperciate your listeners concerns
+encourage listeners to express themselves
+right tone, voice and body language
+</br>
+<p><b>leadership skills:</b></p>
+</br>
+keep learning and keep growing
+communciate clearly</br>
+set a good example</br>
+encourage feedback</br>
+offer recongition</br>
+be decisive</br>
+help your team see the 'Big-picture'</br>
+provide professional guidance</br>
+be patient with yourself</br>
+</br>
+common mistakes:
+</br>
+not delegating</br>
+focusing on details rather than goals</br>
+initationg goalsv</br>
+making promises you can't keep</br>
+holding back
+
+    </p>
+
+
+</body>
 </html>
